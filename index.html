@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather App</title>
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet">
+        <link rel="stylesheet" type= "text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Weather App</h1>
+        </header>
+
+        <div class="container">
+            <h1 class="w-location"></h1>
+            <div class="container-deg">
+                <div class="celsius active">C</div>
+                <div class="fahrenheit ">F</div>
+            </div>
+            <h3 class="w-description"></h3>
+            <h3><span class='w-string'></span>&#32; &#176;</h3>
+            <img id="w-icon" src="">
+            <ul>
+                <li id="humidity">humidity</li>
+                <li id="wind">wind</li>
+            </ul>
+            <a class="btn" href="#/">Change Location</a>
+        </div>
+
+        <div class="modal">
+            <div class="modal-content">
+                <span class="close x">&times;</span>
+                <form>
+                    <div class="error"></div>
+                    <h3>Choose Location</h3>
+                    <input type="text" id="city" placeholder="City"><br>
+                    <input type="text" id="country-code" placeholder="Country Code">
+                    <div class="btn-container">
+                        <a class="btn btn-modal" href="#/">Save Changes</a>
+                        <a class="btn btn-modal-ghost close" href="#/">Cancel</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>All rights reserved &copy;</footer>
+
+        <script src="storage.js"></script>
+        <script src="weather.js"></script>
+        <script src="ui.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>

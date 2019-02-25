@@ -1,0 +1,227 @@
+/* ---------------------------------------- */
+/* BASIC SETUP */
+/* ---------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Lato', Arial, sans-serif;
+    font-weight: 300;
+    color: #2b2d25;
+    font-size: 25px;
+    background-color: #F5FBFF;
+}
+
+/* ---------------------------------------- */
+/* HEADER & FOOTER */
+/* ---------------------------------------- */
+header,
+footer{
+    text-align: center;
+    margin-bottom: 40px;;
+}
+
+header {
+    background-color: #717cfa;
+}
+
+footer {
+    border-top: 1px solid #717cfa;
+    border-bottom: 1px solid #717cfa;
+    padding: 12px;
+    font-size: 80%;
+}
+/* ---------------------------------------- */
+/* CONTAINER */
+/* ---------------------------------------- */
+
+h1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 150%;
+    padding: 20px;
+    color: #fff;
+}
+
+h3 {
+    color: navy;
+}
+
+.container {
+    width: 67%;
+    height: 550px;
+    background-color: #B6E3FD;
+    background-color: #95d6fc;
+    padding: 30px;
+    margin: 30px auto;
+    border-radius: 15px;
+    text-align: center;
+    border: 2px solid navy;
+}
+
+.container h1 {
+    font-weight: 400;
+}
+
+.container-deg {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.celsius,
+.fahrenheit {
+    align-self: center;
+    font-weight: 400;
+    cursor: pointer;
+    color: rgb(150, 150, 150);
+}
+
+.celsius {
+    margin-right: 20px;
+}
+
+.fahrenheit {
+    margin-right: 50px;
+}
+
+.active {
+    color: navy;
+    cursor: auto;
+    font-size: 120%;
+}
+
+img {
+    width: 80px;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    background-color: #fff;
+    width: 40%;
+    margin: 0px auto;
+    padding: 8px;
+    word-spacing: 25px;
+    border: 1px solid navy;
+    border-top: none;
+}
+
+li:first-child {
+    border-top: 1px solid navy;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+li:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+/* ---------------------------------------- */
+/* MODAL */
+/* ---------------------------------------- */
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    transition: all 0.2s;
+    background-color: #3498db;
+    border: 1px solid #3498db;
+    color: #fff;
+    margin-top: 40px;
+}
+
+.btn-modal:link,
+.btn-modal:visited,
+.btn-modal-ghost:link,
+.btn-modal-ghost:visited {
+    border-radius: 20px;
+    font-size: 80%;
+    padding: 8px 15px;
+    margin: 50px 20px;
+}
+
+.btn-modal-ghost:link,
+.btn-modal-ghost:visited {
+    background: none;
+    color: #3498db;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    border: 1px solid #2980b9;
+}
+
+.btn-modal-ghost:hover {
+    color: #fff;
+}
+
+input {
+    padding: 10px;
+    width: 40%;
+    font-size: 80%;
+    border-radius: 5px;
+    border: 1px solid navy;
+    margin: 10px;
+
+}
+
+input:focus {
+    outline: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+}
+
+.modal h3 {
+    margin: 30px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid rgb(150, 150, 150);
+    width: 40%;
+    height: 45%;
+}
+
+.x {
+    color: rgb(150, 150, 150);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+.x:hover {
+    color: navy;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-weight: 600;
+}
