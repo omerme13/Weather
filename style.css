@@ -106,6 +106,7 @@ ul {
 li {
     background-color: #fff;
     width: 40%;
+    min-width: 100px;
     margin: 0px auto;
     padding: 8px;
     word-spacing: 25px;
@@ -232,6 +233,6 @@ input:focus {
 
 @media(max-width: 500px) {
     html {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
