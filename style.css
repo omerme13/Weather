@@ -172,6 +172,7 @@ li:last-child {
 input {
     padding: 10px;
     width: 40%;
+    min-width: 120px;
     font-size: 80%;
     border-radius: 5px;
     border: 1px solid navy;
@@ -234,5 +235,26 @@ input:focus {
 @media(max-width: 500px) {
     html {
         font-size: 1.2em;
+    } 
+
+    .modal-content {
+        width: 50%;
+        height: 55%;
     }
+
+    .modal h3 {
+        margin: 20px;
+    }
+
+    .btn-modal:link,
+    .btn-modal:visited,
+    .btn-modal-ghost:link,
+    .btn-modal-ghost:visited {
+        margin: 5px 20px;
+    }
+
+
+
+
+
 }
