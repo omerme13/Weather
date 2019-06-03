@@ -207,7 +207,9 @@ input:focus {
     padding: 20px;
     border: 1px solid rgb(150, 150, 150);
     width: 40%;
+    min-width: 250px;
     height: 45%;
+    min-height: 400px;
 }
 
 .x {
@@ -232,18 +234,17 @@ input:focus {
 /* RESPONSIVENESS */
 /* ---------------------------------------- */
 
-@media(max-width: 500px) {
+@media(max-width: 480px) {
     html {
         font-size: 1.2em;
     } 
 
-    .modal-content {
-        width: 50%;
-        height: 55%;
-    }
-
     .modal h3 {
         margin: 20px;
+    }
+
+    .modal-content {
+        min-height: 320px;
     }
 
     .btn-modal:link,
